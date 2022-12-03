@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .slide{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        p{
+            padding: 10px 0;
+        }
+        #ans{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="slide">
+        <p id="que">What is your name</p>
+        <p id="ans">My name id Ammar</p>
+    </div>
+
+<script>
+    $("#que").click(function(){
+        $("#ans").slideToggle();
+    });
+</script>
+</body>
+</html>
