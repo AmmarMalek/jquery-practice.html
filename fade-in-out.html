@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade in out</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum architecto nesciunt, quisquam accusantium aspernatur temporibus adipisci distinctio quod, dolor cum maiores repellendus magni similique saepe explicabo itaque dolores optio veritatis. Veniam aliquid dolores inventore, perspiciatis neque rerum. Dolorum expedita unde amet in soluta eveniet, incidunt accusamus obcaecati! Corrupti, neque odit.</p>
+
+<button id="fade-out">Fade Out</button>
+<button id="fade-in">Fade In</button>
+<button id="fade-toggle">Fade Toggle</button>
+
+<script>
+    $("#fade-out").click(function (){
+        $("#para").fadeOut(2000);
+    });
+
+    $("#fade-in").click(function (){
+        $("#para").fadeIn(2000);
+    });
+
+    $("#fade-toggle").click(function (){
+        $("#para").fadeToggle(2000);
+    });
+</script>
+
+</body>
+</html>
